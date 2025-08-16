@@ -7,7 +7,7 @@
 ## Project Overview
 This project reproduces a YOLO-based approach for detecting **safety helmets**, **safety clothing**, and related classes in workplace/surveillance images, then adds a **significant contribution**: a robust, automated data-prep + split pipeline and tuned training setup that makes the method easier to run, audit, and extend.
 
-**Key outcome:** Achieved **mAP50 = 0.489** overall; best per-class **mAP50 = 0.860** for `safety_helmet`.
+**Key outcome:** Fine-tuned YOLOv8n slightly outperformed the baseline, improving mAP50 from **0.484 to 0.489** and mAP50-95 from **0.286 to 0.302**, showing that our contribution adds measurable gains
 
 ---
 
