@@ -11,6 +11,33 @@ This project reproduces a YOLO-based approach for detecting **safety helmets**, 
 
 ---
 
+## Repository Structure
+```plaintext
+AIDI1002_Final_Project/
+├── reproduction/        # Original paper reproduction code
+├── contribution/        # YOLOv8 fine-tuning + improvements
+├── dataset_preparation/ # Scripts for data prep and splitting
+├── results/             # Evaluation metrics and predictions
+└── README.md            # Project documentation
+
+```
+
+## Data
+- **Dataset:** Safety Helmet & Clothing Detection (SFCHD)  
+- **Source:** https://drive.google.com/drive/folders/1WHcIfqJW9nd7tDNFH03vznThIbuRsy9-?usp=drive_link 
+- **Classes:** safety_helmet, safety_clothing, person, face  
+- **Note:** Dataset is not stored in this repo due to size.
+
+## Results
+
+| Model   | Training Stage | Epochs | mAP50  | mAP50-95 | Precision | Recall |
+|---------|----------------|--------|--------|----------|-----------|--------|
+| YOLOv8n | **Baseline** (original)   | 20     | 0.484  | 0.286    | 0.664     | 0.429  |
+| YOLOv8n | **Fine-Tuned** (contributions) | 20     | 0.489  | 0.302    | 0.664     | 0.429  |
+
+---
+
+
 ## Paper & Context
 - **Task:** Object detection for PPE (helmets/clothing).
 - **Model:** Ultralytics **YOLOv8** (nano variant for speed on Colab).
@@ -38,19 +65,6 @@ This project reproduces a YOLO-based approach for detecting **safety helmets**, 
 
 ---
 
-## Repository Structure
-```plaintext
-AIDI1002_Final_Project/
-├── reproduction/        # Original paper reproduction code
-├── contribution/        # YOLOv8 fine-tuning + improvements
-├── dataset_preparation/ # Scripts for data prep and splitting
-├── results/             # Evaluation metrics and predictions
-└── README.md            # Project documentation
 
-```
 
-## Data
-- **Dataset:** Safety Helmet & Clothing Detection (SFCHD)  
-- **Source:** https://drive.google.com/drive/folders/1WHcIfqJW9nd7tDNFH03vznThIbuRsy9-?usp=drive_link 
-- **Classes:** safety_helmet, safety_clothing, person, face  
-- **Note:** Dataset is not stored in this repo due to size.
+
