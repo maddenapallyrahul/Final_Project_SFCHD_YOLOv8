@@ -47,3 +47,10 @@ AIDI1002_Final_Project/
 ├── results/             # Evaluation metrics and predictions
 └── README.md            # Project documentation
 
+```
+
+## Data
+- **Dataset:** Safety Helmet & Clothing Detection (SFCHD)  
+- **Source:** https://drive.google.com/drive/folders/1WHcIfqJW9nd7tDNFH03vznThIbuRsy9-?usp=drive_link 
+- **Classes:** safety_helmet, safety_clothing, person, face  
+- **Note:** Dataset is not stored in this repo due to size.
